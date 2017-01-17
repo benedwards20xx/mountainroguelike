@@ -40,13 +40,13 @@ var play = {
     if (!pause) {
       var player = level.getPlayer();
       if (typeof player != 'undefined') {
-        if (key.event.keyIdentifier == "Left") {
+        if (key.event.key == "ArrowLeft") {
           player.updatePosition(player.col - 1, player.row);
-        } else if (key.event.keyIdentifier == "Right") {
+        } else if (key.event.key == "ArrowRight") {
           player.updatePosition(player.col + 1, player.row);
-        } else if (key.event.keyIdentifier == "Up") {
+        } else if (key.event.key == "ArrowUp") {
           player.updatePosition(player.col, player.row - 1);
-        } else if (key.event.keyIdentifier == "Down") {
+        } else if (key.event.key == "ArrowDown") {
           player.updatePosition(player.col, player.row + 1);
         }
       }
